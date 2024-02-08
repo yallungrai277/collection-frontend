@@ -1,0 +1,29 @@
+.logos {
+    &__container {
+        max-width: 1200px;
+        margin: auto;
+
+        @include breakpoint-up(medium) {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 0 3.125rem 0;
+
+            @include breakpoint-up(medium) {
+                margin: 1.25rem 1.25rem 1.25rem 1.25rem;
+            }
+
+            @include breakpoint-up(large) {
+                margin: 0;
+            }
+        }
+    }
+}

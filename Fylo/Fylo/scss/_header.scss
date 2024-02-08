@@ -1,0 +1,33 @@
+header {
+  background-color: $introBg;
+  .container {
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) repeat(3, auto);
+    gap: 1.25rem;
+    align-items: center;
+  }
+  @include breakpoint-up(large) {
+    gap: 3.5rem;
+  }
+
+  .logo {
+    cursor: pointer;
+    width: 5.1875rem;
+    @include breakpoint-up(large) {
+      width: 8.5rem;
+    }
+  }
+
+  a {
+    font-size: 0.875rem;
+    transition: color 300ms ease-in-out;
+
+    @include breakpoint-up(large) {
+      font-size: 1rem;
+    }
+
+    &:hover {
+      color: $ctaBlue;
+    }
+  }
+}

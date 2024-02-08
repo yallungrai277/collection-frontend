@@ -1,0 +1,123 @@
+html {
+  font-size: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $fontBody;
+  font-size: calc(1rem + 0.75vw);
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+*,
+a {
+  color: #fff;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $fontTitle;
+}
+
+h2.small {
+  font-size: 1.3em;
+}
+
+h2.large {
+  font-size: 1.6em;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 1.5em;
+}
+
+a,
+p {
+  font-size: 0.875rem;
+
+  @include breakpoint-up(large) {
+    font-size: 1rem;
+  }
+
+  font-size: 1rem;
+}
+
+section {
+  background-color: $mainBg;
+}
+
+.button {
+  border: none;
+  background-image: linear-gradient(to right, $ctaCyan, $ctaBlue);
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 0.9375rem 2.5rem;
+  width: 100%;
+  border-radius: 1.875rem;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  font-family: $fontBody;
+  text-align: center;
+
+  &__large {
+    @extend .button;
+    padding: 1.25rem;
+
+    @include breakpoint-up(medium) {
+      max-width: 17.8125rem;
+    }
+  }
+
+  &:hover {
+    background-image: linear-gradient(to right, $ctaBlue, $ctaCyan);
+    opacity: 0.9;
+  }
+
+  @include breakpoint-up(medium) {
+    max-width: 12.5rem;
+  }
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 1.5625rem 1.25rem 3.125rem 1.25rem;
+
+  @include breakpoint-up(large) {
+    padding: 2rem;
+  }
+
+  &__small {
+    @extend .container;
+    max-width: 55rem;
+  }
+}
+
+input[type='text'],
+input[type='email'] {
+  outline: none;
+  border: none;
+  border-radius: $border-radius-circle;
+  font-size: 0.9rem;
+  font-family: $fontBody;
+  color: $footerBg;
+  padding: 1.25rem 1.8rem;
+}

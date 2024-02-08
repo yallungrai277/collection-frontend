@@ -1,0 +1,19 @@
+.hero {
+    padding-top: 7.5rem;
+
+    @include breakpoint-up(medium) {
+        padding-top: 8.125rem;
+    }
+
+    h1 {
+        @include breakpoint-up(large) {
+            br {
+                display: none;
+            }
+        }
+    }
+
+    &__logo {
+        margin-bottom: 4.375rem;
+    }
+}

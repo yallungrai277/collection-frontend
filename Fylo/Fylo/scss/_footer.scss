@@ -1,0 +1,119 @@
+.footer {
+    padding-top: 12.5rem;
+    background-color: $footerBg;
+
+    a {
+        transition: 300ms all ease-in-out;
+    }
+
+    a:hover {
+        color: $ctaCyan;
+    }
+
+    .container {
+        display: grid;
+        grid-row-gap: 35px;
+        grid-column-gap: 20px;
+
+        @include breakpoint-up(medium) {
+            grid-column-gap: 1.5625rem;
+        }
+
+        @include breakpoint-up(large) {
+            grid-column-gap: 2.1875rem;
+            grid-template-columns: 3fr 2fr 2fr 2fr auto;
+            grid-template-rows: 60px 1fr;
+        }
+
+        @include breakpoint-up(xlarge) {
+            grid-column-gap: 3.75rem;
+        }
+    }
+
+    &__logo {
+        grid-column: 1 / end;
+        cursor: pointer;
+
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    &__address {
+        display: flex;
+
+        svg {
+            flex: 0 0 0.8125rem;
+            margin-top: 0.1875rem;
+            margin-right: 1.25rem;
+        }
+
+        .address {
+            font-size: 1rem;
+        }
+    }
+
+    &__contact {
+        margin-bottom: 1.25rem;
+
+        @include breakpoint-up(large) {
+            justify-self: right;
+        }
+
+
+        a {
+            font-size: 0.85rem;
+
+        }
+
+        &__phone,
+        &__email {
+            display: flex;
+            align-items: center;
+        }
+
+        &__phone svg {
+            width: 18px;
+            margin-right: 1.25rem;
+            cursor: pointer;
+        }
+
+        &__email svg {
+            width: 20px;
+            margin-right: 1.25rem;
+            cursor: pointer;
+        }
+    }
+
+    &__links1,
+    &__links2 {
+        a {
+            display: block;
+            margin-bottom: 1.25rem;
+        }
+    }
+
+    &__links1 {
+        @include breakpoint-up(large) {
+            justify-self: center;
+        }
+    }
+
+    &__social {
+        justify-self: center;
+
+        i {
+            width: 35px;
+            height: 30px;
+            padding: 0.3rem;
+            margin-right: 0.1rem;
+            transition: all 200ms ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                color: $ctaCyan;
+            }
+        }
+    }
+}

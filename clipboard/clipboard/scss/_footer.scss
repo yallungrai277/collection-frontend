@@ -1,0 +1,123 @@
+footer {
+    background-color: $xlightGray;
+
+    .footer-container {
+        padding: 2.875rem 2rem;
+        max-width: 1110px;
+        margin: auto;
+
+        @include breakpoint-up(medium) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 2.8125rem;
+
+        @include breakpoint-up(medium) {
+            margin-bottom: 0;
+        }
+
+        img {
+            width: 3.75rem;
+        }
+    }
+
+    .links {
+
+        @include breakpoint-up(medium) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            column-gap: 2.5rem;
+            row-gap: 1.5625rem;
+        }
+
+        @include breakpoint-up(large) {
+            column-gap: 5.625rem;
+        }
+
+        a {
+            display: block;
+            margin-bottom: 2.1875rem;
+            text-align: center;
+            color: $darkGray;
+            transition: color 200ms ease-in-out;
+
+            @include breakpoint-up(medium) {
+                text-align: left;
+                margin-bottom: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 3.4375rem;
+
+                @include breakpoint-up(medium) {
+                    margin-bottom: 0;
+                }
+            }
+
+            &:hover {
+                color: #8c9caf;
+            }
+
+            &:first-child {
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+
+            &:nth-child(2) {
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+
+            &:nth-child(3) {
+                grid-column: 2/3;
+                grid-row: 1/2;
+            }
+
+            &:nth-child(4) {
+                grid-column: 2/2;
+                grid-row: 2/3;
+            }
+
+            &:nth-child(5) {
+                grid-column: 3/4;
+                grid-row: 1/2;
+            }
+        }
+    }
+
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            height: 1.5625rem;
+            width: 1.5625rem;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+
+        }
+
+        a.facebook {
+            background-image: url('../../images/icon-facebook.svg');
+        }
+
+        a.twitter {
+            background-image: url('../../images/icon-twitter.svg');
+        }
+
+        a.instagram {
+            background-image: url('../../images/icon-instagram.svg');
+        }
+    }
+}

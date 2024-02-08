@@ -1,0 +1,40 @@
+.supercharge {
+
+    .content {
+        margin-bottom: 20px;
+    }
+
+    &__columns {
+        @include breakpoint-up(large) {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+        }
+    }
+
+    &__column {
+        margin-bottom: 3.75rem;
+
+        @include breakpoint-up(large) {}
+
+        h3 {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__icon {
+        height: 3rem;
+        margin-bottom: 1.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include breakpoint-up(large) {
+            margin-bottom: 2rem;
+        }
+    }
+
+
+}

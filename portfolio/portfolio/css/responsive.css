@@ -1,0 +1,234 @@
+@media screen and (max-width: 948px) {
+
+    .container {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+
+    .skills h1,
+    .contact h1 {
+        font-size: 6rem;
+    }
+
+    .about h1,
+    .work h1 {
+        font-size: 6rem;
+    }
+
+    .category>div {
+        height: 210px;
+    }
+
+    .logo h1 a {
+        font-size: 2.8rem;
+    }
+
+    nav ul li a {
+        margin: 0;
+    }
+
+    .about-me-info {
+        padding: 2rem;
+    }
+
+    .social-links a {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 614px) {
+
+    .container {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .text h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .hamburger {
+        position: relative;
+        top: 7px;
+        display: inline-block;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    nav {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        right: 0;
+        background: rgb(48 50 52);
+        width: 80vw;
+        height: 100vh;
+        z-index: 2;
+        opacity: 0;
+        transition: all 400ms ease-in-out;
+        transform: translateX(100%);
+    }
+
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    nav ul li a {
+        margin: 1rem 0 1rem;
+        padding: 1rem;
+        color: #ded3d3;
+    }
+
+    .open nav {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .open .hamburger .line-middle {
+        opacity: 0;
+    }
+
+    .open .hamburger .line-top {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .open .hamburger .line-bottom {
+        transform: rotate(45deg) translate(-3px, -3px);
+    }
+
+    .skills h1,
+    .contact h1 {
+        font-size: 4rem;
+    }
+
+    .about h1,
+    .work h1 {
+        font-size: 4rem;
+    }
+
+    .about,
+    .work,
+    .skills {
+        margin-bottom: 2rem;
+    }
+
+    .skills {
+        margin-top: 5rem;
+    }
+
+    .work-category {
+        margin-bottom: 1rem;
+    }
+
+    .category>div {
+        height: 262px;
+    }
+
+    .social-links {
+        position: initial;
+        display: block;
+        max-width: 8rem;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .social-links a {
+        margin-right: 1rem;
+    }
+
+    .social-links a:last-child {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 543px) {
+
+    .container {
+        padding-right: 1.3rem;
+        padding-left: 1.3rem;
+        padding-top: 0.3rem;
+        padding-bottom: 1rem;
+    }
+
+
+    .logo h1 a {
+        font-size: 2.5rem;
+    }
+
+    .profile-image {
+        display: none;
+    }
+
+    .text {
+        text-align: center;
+        flex: 1;
+    }
+
+    .text a,
+    .work-category button,
+    form input:last-child {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .category {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .about-me-info p {
+        font-family: var(--poppinsFont);
+        font-size: 0.8rem;
+    }
+
+    .about img {
+        right: 1rem;
+    }
+
+    .skills h1,
+    .contact h1 {
+        font-size: 2.8rem;
+    }
+
+    .about h1,
+    .work h1 {
+        font-size: 2.8rem;
+    }
+
+
+    .about-me-info {
+        padding: 1.8rem;
+    }
+
+    .skills-info {
+        font-size: 0.8rem;
+    }
+
+    .category>div {
+        height: 170px;
+    }
+
+    .tag p {
+        font-size: 1rem;
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.95rem;
+    }
+
+    footer p {
+        font-size: 0.95rem;
+    }
+}

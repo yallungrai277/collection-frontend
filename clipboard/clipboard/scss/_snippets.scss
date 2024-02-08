@@ -1,0 +1,58 @@
+.snippets {
+    &__content {
+        position: relative;
+        width: 100%;
+
+        @include breakpoint-up(large) {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__image,
+    &__features {
+        @include breakpoint-up(large) {
+            flex: 1;
+        }
+    }
+
+    &__features {
+        text-align: center;
+
+        @include breakpoint-up(large) {
+            text-align: left;
+            margin-left: 3.4375rem;
+        }
+
+        h3 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin: 0 auto 1rem;
+
+            @include breakpoint-up(large) {
+                margin: 0 0 1rem;
+            }
+        }
+
+    }
+
+    &__image {
+        margin-bottom: 3.75rem;
+
+        @include breakpoint-up(large) {
+            margin-bottom: 0;
+        }
+
+        img {
+            width: 100%;
+            max-width: 31.25rem;
+
+            @include breakpoint-up(large) {
+                transform: translateX(-55px);
+                max-width: none;
+            }
+        }
+    }
+}

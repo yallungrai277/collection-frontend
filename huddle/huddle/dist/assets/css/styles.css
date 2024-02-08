@@ -1,0 +1,185 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.3;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+    text-align: left;
+  }
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem;
+  min-width: 15.625rem;
+  background: #fff;
+  color: #674bb1;
+  font-family: "Poppins", sans-serif;
+  border-radius: 1.875rem;
+  box-shadow: 0.3125rem 0.3125rem 0.625rem #3d2d69;
+  transition: all 300ms ease-in-out;
+  line-height: 1;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .button {
+    padding: 1.2rem 3rem;
+    min-width: 12.5rem;
+  }
+}
+
+.button:hover {
+  transform: translateX(4px);
+}
+
+header {
+  margin-bottom: 3.1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    margin-bottom: 5.25rem;
+  }
+}
+
+header img {
+  width: 7.5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  header img {
+    width: 12.5rem;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  footer {
+    justify-content: flex-end;
+  }
+}
+
+footer > a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+footer a {
+  transition: all 300ms ease-in-out;
+}
+
+footer a:hover {
+  transform: translateY(-3px);
+}
+
+footer i {
+  transition: color 350ms ease-in-out;
+}
+
+footer a:hover i {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+footer i.fab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: #fff;
+}
+
+body {
+  padding: 2.5rem 2.5rem 4.375rem 2.5rem;
+  background-image: url("../images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #674bb1;
+  color: #fff;
+}
+
+@media only screen and (min-width: 640px) {
+  body {
+    background-image: url("../images/bg-desktop.svg");
+    padding: 3.75rem 5rem 2.5rem 5rem;
+  }
+}
+
+main {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    display: grid;
+    margin-bottom: 1.625rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main .heroImage {
+    margin-bottom: 2rem;
+  }
+}
+
+main .heroImage img {
+  width: 100%;
+}
+
+main .heroText {
+  line-height: 1.75;
+}
+
+@media only screen and (min-width: 1024px) {
+  main .heroText {
+    padding-left: 3.75rem;
+  }
+}
+
+main .heroText h1 {
+  line-height: 1.3;
+}
+
+main .heroText h1,
+main .heroText p {
+  margin-bottom: 1.625rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  main .heroText {
+    text-align: center;
+  }
+}

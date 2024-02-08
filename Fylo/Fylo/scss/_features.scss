@@ -1,0 +1,45 @@
+.features {
+  .feature-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    gap: 6vw 10vw;
+
+    @include breakpoint-up(medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint-up(large) {
+      gap: 7vw 7vw;
+    }
+  }
+
+  .feature {
+    margin-bottom: 4rem;
+    text-align: center;
+
+    &-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90px;
+      margin-bottom: 1.875rem;
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    &-title {
+      font-family: $fontTitle;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    &-description {
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+
+:root {
+  --primary-color: #f67c92;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+  color: #777;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 2.2rem;
+  outline: none;
+  cursor: pointer;
+  color: #777;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.btn-primary {
+  border: 2px solid var(--primary-color);
+  font-weight: bold;
+}
+
+.square {
+  display: inline-block;
+  height: 0.8rem;
+  width: 0.8rem;
+  background: var(--primary-color);
+  margin: 0.9rem 0;
+}
+
+.lines {
+  margin: 2rem 0;
+  line-height: 0.8rem;
+}
+
+.lines .line1 {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  background: var(--primary-color);
+}
+.lines .line2 {
+  display: inline-block;
+  width: 5rem;
+  height: 0.06rem;
+  background: var(--primary-color);
+}
+.lines .line3 {
+  display: inline-block;
+  width: 3.75rem;
+  height: 0.06rem;
+  background: var(--primary-color);
+}
+
+/* Header */
+
+header {
+  height: 100vh;
+  background: url('../images/background.png') no-repeat center center/cover;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 3rem;
+}
+
+.logo {
+  padding-top: 2rem;
+  width: 6.25rem;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.header-content {
+  max-width: 25rem;
+  margin-top: 4rem;
+}
+
+.header-content .btn {
+  margin: 0.5rem 0;
+}
+
+/* Navbar */
+
+#navbar .nav-brand {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15rem;
+  height: 100vh;
+  background: var(--primary-color);
+  z-index: 1;
+  transition: 0.5s ease;
+}
+
+.nav-brand ul li {
+  list-style: none;
+  margin: 3rem 1.25rem;
+}
+
+.nav-brand ul li a {
+  color: #fff;
+}
+
+.menu {
+  position: fixed;
+  width: 2.2rem;
+  right: 4rem;
+  top: 3.5rem;
+  z-index: 2;
+}
+
+.menu img {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* About and Offer*/
+#about,
+#offer {
+  display: flex;
+  padding: 2rem 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-left-col,
+.offer-left-col {
+  flex-basis: 50%;
+}
+
+.about-left-col img,
+.offer-left-col img {
+  width: 100%;
+}
+
+.about-right-col,
+.offer-right-col {
+  flex-basis: 50%;
+  text-align: right;
+}
+.about-right-col .about-content,
+.offer-right-col .offer-content {
+  max-width: 750px;
+  margin-right: 4rem;
+  display: inline-block;
+}
+
+.about-content h3,
+.offer-content h3 {
+  font-style: italic;
+}
+
+/* Features */
+
+#features {
+  padding: 3rem 0;
+}
+
+.feature-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+.feature-col {
+  flex-basis: 25%;
+  text-align: center;
+}
+
+.feature-col img {
+  width: 6.25rem;
+}
+
+.feature-col h4 {
+  margin-bottom: 0.9rem;
+  font-weight: 500;
+}
+
+.feature-btn {
+  margin: 2rem auto 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* Courses */
+#courses {
+  padding: 4rem 0;
+}
+
+.course-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.course-left-col {
+  flex-basis: 50%;
+}
+
+.course-content {
+  max-width: 400px;
+}
+
+.course-content .btn {
+  margin: 1rem 0;
+}
+
+.course-right-col {
+  flex-basis: 50%;
+}
+
+.course-right-col img {
+  width: 100%;
+}
+
+/* Offer */
+#offer .btn {
+  margin: 1rem 0;
+}
+
+/* Contact */
+#contact {
+  margin: 1rem 3rem;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-left-col {
+  flex-basis: 50%;
+}
+
+.contact-right-col {
+  flex-basis: 40%;
+  justify-self: flex-end;
+}
+
+.contact-right-col img {
+  width: 100%;
+}
+
+#contact form {
+  max-width: 21rem;
+  margin: 1.5rem 0;
+}
+
+#contact form input {
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 0.8rem;
+  outline: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  border: 2px solid var(--primary-color);
+}
+
+.contact-left-col .btn-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.btn-box button {
+  flex-basis: 48%;
+  padding: 0.8rem 0;
+}
+
+/* FOoter */
+#footer {
+  padding: 1rem 0;
+}
+
+#footer hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #fc6792;
+}
+
+#footer {
+  margin-top: 1rem;
+}
+.footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.link-title {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  text-align: center;
+  width: 9rem;
+}
+
+.link-title h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.link-title small {
+  font-size: 0.9rem;
+  display: block;
+  padding: 0.5rem 0;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 10rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 2rem;
+  padding: 0.5rem 0.5rem;
+  background: var(--primary-color);
+  cursor: pointer;
+  transition: background 0.8s ease-in;
+}
+
+.social-icons a:hover {
+  background: #fff;
+}
+
+.social-icons img {
+  width: 100%;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 770px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+
+  header {
+    background: none;
+    height: initial;
+  }
+
+  header .header-content {
+    max-width: 40rem;
+  }
+  .logo {
+    padding-top: 3rem;
+    width: 5rem;
+  }
+
+  .container {
+    margin: 0 1rem;
+  }
+
+  .menu {
+    right: 1rem;
+  }
+
+  #about,
+  #offer {
+    flex-direction: column;
+  }
+
+  #about,
+  #offer {
+    padding: 0;
+  }
+
+  .about-left-col,
+  .offer-left-col,
+  .about-right-col,
+  .offer-right-col {
+    flex-basis: 100%;
+  }
+  .about-right-col .about-content,
+  .offer-right-col .offer-content {
+    margin: 1.5rem;
+    text-align: center;
+  }
+
+  .about-right-col .about-content,
+  .offer-right-col .offer-content {
+    max-width: 700px;
+  }
+
+  .feature-row {
+    width: 100%;
+  }
+
+  .btn-box button {
+    flex-basis: 38%;
+    padding: 0.4rem 0;
+  }
+
+  #contact {
+    margin: 1rem 1rem;
+  }
+
+  .contact-left-col h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .contact-right-col,
+  .course-right-col {
+    display: none;
+  }
+
+  .contact-left-col,
+  .course-left-col {
+    flex-basis: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feature-row {
+    width: 100%;
+    flex-direction: column;
+  }
+}
